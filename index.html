@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Survey Form</title>
+  </head>
+<body class="container">
+    <h1>Public Perception of Neurotechnology and<br/> Brain Computer Interface</h1>
+    <p>Neurotechnology is rapidly evolving from brain implants to mind-controlled devices.<br/>This survey aims to understand public opinions on BCI applications, ethics, and safety.<br/> Your responses will remain anonymous and help shape future developments in this field.</p>
+    <form method="post" action="https://www.freecodecamp.org" id="survey-form">
+      <fieldset> 
+        <label class="bold" for="name">Name:</label>
+          <input id="name" type="text" name="name" placeholder="Enter your name" required/>
+        <label class="bold" for="email">Email:</label>
+          <input id="email" type="email" name="email" placeholder="Enter your email" required/>
+        <label class="bold" for="age">Age:</label>
+          <select id="age" name="age">
+            <option value="">Select your age range</option>
+            <option value="under18">under 18</option>
+            <option value="18">18-24</option>
+            <option value="25">25-34</option>
+            <option value="35">35 & above></option>
+          </select> 
+        <label class="bold" for="dropdown" required>Profession:</label>
+          <select id="dropdown" name="profession">
+            <option value="">Select one</option>
+            <option value="neuroscientist">Neuroscientist</option>
+            <option value="physician">Physician</option>
+            <option value="engineer">Software Engineer</option>
+            <option value="professor">University Professor</option>
+            <option value="entrepreneur">Entrepreneur</option>
+            <option value="other">Other</option>
+          </select>
+    </fieldset>
+    <fieldset>
+      <legend class="bold">Have you heard about Brain Computer Interface (BCI)</legend>  
+        <label class="inline" for="yes"><input class="inline" id="yes" type="radio" name="BCI" value="Yes"/>Yes</label>
+        <label class="inline" for="no"><input class="inline" id="no" type="radio" name="BCI" value="No"/>No</label>
+      <legend class="bold">Which of the following neurotechnologies have you heard of? </legend>
+        <label class="inline" for="1"><input class="inline" id="1" type="checkbox" name="neurotech" value="Brain implant"/>Brain implant</label>
+        <label class="inline" for="2"><input class="inline" id="2" type="checkbox" name="neurotech" value="Mind controlled prosthetics"/>Mind controlled prosthetics</label>
+        <label class="inline" for="3"><input class="inline" id="3" type="checkbox" name="neurotech" value="Memory enhancing chips"/>Memory enhancing chips</label>
+        <label class="inline" for="4"><input class="inline" id="4" type="checkbox" name="neurotech" value="Brainwave controlled gaming"/>Brainwave controlled gaming</label>
+        <label class="inline" for="5"><input class="inline" id="5" type="checkbox" name="neurotech" value="none of the above"/>None of the above</label>
+      <legend class="bold">How do you feel about the idea of controlling devices with your brain?</legend>
+        <label class="inline" for="excited"><input class="inline" id="excited" type="checkbox" name="controlling-devices" value="excited"/>Excited</label>
+        <label class="inline" for="curious"><input class="inline" id="curious" type="checkbox" name="controlling-devices" value="curious but cautious"/>Curious but cautious</label>
+        <label class="inline" for="concerned"><input class="inline" id="concerned" type="checkbox" name="controlling-devices" value="concerned about risks"/>Concerned about risks</label>
+        <label class="inline" for="oppose"><input class="inline" id="oppose" type="checkbox" name="controlling-devices" value="strongly opposed"/>Strongly opposed</label>
+    </fieldset>
+    <fieldset>
+      <legend class="bold">What concerns you the most about brain implants?</legend>
+        <label class="inline" for="privacy"><input class="inline" id="privacy" type="checkbox" name="concern the most" value="data privacy and hacking risks"/>Data privacy and hacking risks</label>
+        <label class="inline" for="health"><input class="inline" id="health" type="checkbox" name="concern the most" value="health risks and side effects"/>Health risks and side effects</label>
+        <label class="inline" for="ethical"><input class="inline" id="ethical" type="checkbox" name="concern the most" value="ethical concerns"/>Ethical concerns (e.g mind control, inquality)</label>
+        <label class="inline" for="cost"><input class="inline" id="cost" type="checkbox" name="concern the most" value="cost and accessibility"/>Cost and accessibility</label>
+      <legend class="bold">Would you trust a company to store and use your brain data?</legend>
+        <label class="inline" for="trust"><input class="inline" id="trust" type="radio" name="company-store" value="yes i trust them"/>Yes, I trust them</label>
+        <label class="inline" for="maybe"><input class="inline" id="maybe" type="radio" name="company-store" value="maybe, but only with regulations"/>Maybe, but only with strict regulations</label>
+        <label class="inline" for="no i dont"><input class="inline" id="no i dont" type="radio" name="company-store" value="no i dont trust them"/>No, I don't trust them</label>
+    </fieldset>
+    <fieldset>
+      <legend class="bold">Would you consider using brain implant for any of these purposes?</legend>
+        <label class="inline" for="memory"><input class="inline" id="memory" type="checkbox" name="purposes" value="enhancing memory"/>Enhancing memory and intelligence</label>
+        <label class="inline" for="senses"><input class="inline" id="senses" type="checkbox" name="purposes" value="restore lost senses"/>Restoring lost senses (e.g vision, hearing)</label>
+        <label class="inline" for="devices"><input class="inline" id="devices" type="checkbox" name="purposes" value="control smart devices"/>Controlling smart devices hands-free</label>
+        <label class="inline" for="conditions"><input class="inline" id="conditions" type="checkbox" name="purposes" value="treat mental health"/>Treating mental health conditions</label>
+        <label class="inline" for="implant"><input class="inline" id="implant" type="checkbox" name="purposes" value="i would never use"/>I would never use a brain implant</label>
+      <legend class="bold">If BCI technology is proven safe, would you get a brain implant?</legend>
+        <label class="inline" for="yess"><input class="inline" id="yess" type="radio" name="proven-safe" value="yes"/>Yes</label>
+        <label class="inline" for="noo"><input class="inline" id="noo" type="radio" name="proven-safe" value="no"/>No</label>
+        <label class="inline" for="maybeee"><input class="inline" id="maybeee" type="radio" name="proven-safe" value="maybe"/>Maybe</label>
+        <label class="bold" for="neuro-response">What excites or concerns you the most about Neurotechnology and Brain Computer Interface?</label>
+        <textarea id="neuro-response" name="neuro-response" rows="4" cols="30" placeholder="What excites or worries you about BCIs"></textarea>
+        <input class="bold" id="submit" type="submit" value="submit"/>
+    </fieldset>
+  </form>
+</body>
+</html>
